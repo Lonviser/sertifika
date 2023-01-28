@@ -3,12 +3,13 @@
     background:$main-color;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #000;
+    color: $black;
     border:none;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
     &-green{
-        background:$main-color;
+        background: $second-color;
     }
 }

@@ -3,5 +3,42 @@
     &__price{
         display: flex;
         justify-content: space-between;
+        transition: 0.5s all;
+        &-text{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            color: $black;
+            a{
+                color: #84FF98;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration:underline;
+            }
+        }
+    }
+    &__block{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &-place{
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        &-txt{
+            max-width: 315px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $black;
+        }
+        &-sertification{
+            display: flex;
+            column-gap:25px;
+        }
     }
 }

@@ -1,0 +1,19 @@
+.servises{
+    margin-top: 40px;
+    &__heading{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $black;
+        text-align: center;
+    }
+    &__blocks{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__block{
+        border: 1px solid #FFEF41;
+        min-height: 200px;
+    }
+}

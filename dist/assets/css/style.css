@@ -872,6 +872,10 @@ textarea {
     margin-bottom: 1.5em;
 }
 
+.header {
+    padding-top: 10px;
+}
+
 .header__container {
     display: flex;
     gap: 50px;
@@ -908,6 +912,7 @@ textarea {
 }
 
 .header__number a {
+    text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -957,15 +962,16 @@ textarea {
     background: #FFEF41;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #000;
+    color: #161616;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 .button-green {
-    background: #FFEF41;
+    background: #84FF98;
 }
 
 .about {
@@ -975,6 +981,74 @@ textarea {
 .about__price {
     display: flex;
     justify-content: space-between;
+    transition: 0.5s all;
+}
+
+.about__price-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  /* identical to box height */
+    color: #161616;
+}
+
+.about__price-text a {
+    color: #84FF98;
+    text-decoration: none;
+}
+
+.about__price-text a:hover {
+    text-decoration: underline;
+}
+
+.about__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__block-place {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.about__block-txt {
+    max-width: 315px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161616;
+}
+
+.about__block-sertification {
+    display: flex;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+}
+
+.servises {
+    margin-top: 40px;
+}
+
+.servises__heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #161616;
+    text-align: center;
+}
+
+.servises__blocks {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.servises__block {
+    border: 1px solid #FFEF41;
+    min-height: 200px;
 }
 
 .container {
