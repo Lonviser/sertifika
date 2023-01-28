@@ -29,3 +29,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "components/components";
 @import "utilities/accessibility";
 @import "utilities/alignments";
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/buttons";
+@import "blocks/about";
+.container{
+	max-width: 1440px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+}
+
+*{
+	font-family: 'Montserrat', sans-serif;
+}

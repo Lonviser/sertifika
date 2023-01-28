@@ -1,0 +1,20 @@
+.promo{
+    min-height: 350px;
+    background: url("../img/promo_bg.png")  center no-repeat;
+    background-size: cover;
+    &__info{
+        padding-top: 57px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__buttons{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        column-gap: 100px;
+    }
+}

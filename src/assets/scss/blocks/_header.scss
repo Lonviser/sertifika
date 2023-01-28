@@ -1,0 +1,49 @@
+.header{
+    &__container{
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+    }
+    &__sitename{
+            margin: 0;
+    }
+    &__content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__contacts{
+        justify-content: space-between;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+        &__numbers{
+        display: flex;
+        gap: 20px;
+    }
+    &__number{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        a{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+            color: #161616;
+        }
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        &-list{
+            gap:50px;
+            list-style-type: none;
+            justify-content: space-between;
+            display: flex;
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.button{
+    width: 200px;
+    background:$main-color;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #000;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-green{
+        background:$main-color;
+    }
+}
