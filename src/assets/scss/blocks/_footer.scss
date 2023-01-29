@@ -10,12 +10,7 @@
         display: flex;
         column-gap:60px;
     }
-    &__heading{
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        color: $black;
-    }
+
     &__communication{
         &-block{
             display: flex;

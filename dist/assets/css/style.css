@@ -874,6 +874,116 @@ html {
     text-decoration: underline;
 }
 
+.heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #161616;
+}
+
+.contacts-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.contacts-page-address {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.contacts-page-numbers {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.contacts-page-number {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.contacts-page-number a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161616;
+}
+
+.contacts-page-mail {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts-page-mail a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161616;
+}
+
+.contacts-page-face {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts-page-messengers {
+    padding-top: 20px;
+    display: flex;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contacts-page-viber {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.contacts-page-viber a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161616;
+}
+
+.contacts-page-tg {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.contacts-page-tg a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161616;
+}
+
+@media (max-width: 700px) {
+    .contacts-page {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
 .container {
     max-width: 1440px;
     padding-left: 20px;
@@ -914,6 +1024,10 @@ body {
     margin-bottom: 22px;
 }
 
+.line__page {
+    margin-bottom: 40px;
+}
+
 .first {
     margin-bottom: 14px;
 }
@@ -930,4 +1044,8 @@ body {
 
 * {
     font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
