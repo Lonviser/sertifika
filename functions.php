@@ -142,7 +142,7 @@ function sertifika_scripts() {
 	wp_style_add_data( 'sertifika-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'sertifika-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/dist/assets/css/style.css' );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -176,3 +176,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+function prefix_add_footer_styles() {
+	wp_enqueue_style( 'your-style-id', get_template_directory_uri() . '/dist/assets/css/style.min.css' );
+};
+add_action( 'get_footer', 'prefix_add_footer_styles' );

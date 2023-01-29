@@ -25,9 +25,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "abstracts/abstracts";
 @import "generic/normalize";
 @import "generic/box-sizing";
-@import "components/components";
-@import "utilities/accessibility";
-@import "utilities/alignments";
 
 @import "blocks/header";
 @import "blocks/promo";
@@ -36,6 +33,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "blocks/servises";
 @import "blocks/contatct";
 @import "blocks/footer";
+@import "blocks/breadcrumbs";
+@import "blocks/heading";
+@import "blocks/contacts-page";
+
 .container{
 	max-width: 1440px;
 	padding-left: 20px;
@@ -75,7 +76,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .first{
 	margin-bottom: 14px;
 }
-
+.entry-content{
+	margin-bottom: 20px;
+}
 @media(max-width:950px){
 	.first{
 		margin-bottom: 0;

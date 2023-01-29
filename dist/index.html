@@ -5,16 +5,14 @@
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <!-- Useful meta tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="width=1140" name="viewport" id="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow, noodp">
     <meta name="googlebot" content="index, follow">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Главная</title>
+    
 </head>
 <body>
     <div class="wrapper">
@@ -50,7 +48,7 @@
                         </div>
                         <div class="header__menu">
                             <div class="header__home">
-                                <img src="./assets/img/home-main.svg" alt="Главная">
+                                <a href=""><img src="./assets/img/home-main.svg" alt="Главная"></a>
                             </div>
                             <nav class="header__menu">
                                 <ul class="header__menu-list">
@@ -167,12 +165,12 @@
             <section class="contact">
                 <div class="container">
                     <h3 class="contact__heading">Не знаете, как сформулировать проблему, с которой столкнулись? Оставьте заявку и мы с Вами свяжемся</h3>
-                    <div class="contact__form">
+                    <form class="contact__form">
                         <input type="text" class="contact__form-input" placeholder="Имя" required>
                         <input type="text" class="contact__form-input"placeholder="Телефон или e-mail*" required>
                         <input type="text" class="contact__form-input" placeholder="Комментарий" >
                         <button type="submit" class="button contact__form-button" class="button">Отправить</button>
-                    </div>
+                    </form>
                     <div class="contact__privacy">Нажимая кнопку “Записаться”, Вы соглашаетесь на обработку персональных данных. Не беспокойтесь, Ваши данные не будут переданы третьим лицам</div>
                 </div>
             </section>        
