@@ -728,13 +728,6 @@ html {
     column-gap: 60px;
 }
 
-.footer__heading {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #161616;
-}
-
 .footer__communication-block {
     display: flex;
     -moz-column-gap: 60px;
