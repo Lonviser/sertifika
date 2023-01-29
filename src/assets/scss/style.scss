@@ -75,6 +75,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .first{
 	margin-bottom: 14px;
 }
+
+@media(max-width:950px){
+	.first{
+		margin-bottom: 0;
+	}
+}
 *{
 	font-family: 'Montserrat', sans-serif;
 }
