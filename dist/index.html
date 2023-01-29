@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <!-- Useful meta tags -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="width=1140" name="viewport" id="viewport">
     <meta name="robots" content="index, follow, noodp">
@@ -17,106 +17,251 @@
     <title>Главная</title>
 </head>
 <body>
+    <div class="wrapper">
     
-    <header class="header">
-        <div class="container header__container">
-            <div class="header__logo-block">
-                <img src="./assets/img/logo.png" alt="Sertifika Логотип" class="header__logo">
-            </div>
-            <div class="header__content">
-                <div class="header__contacts">
-                    <h1 class="header__sitename">sertifika.by</h1>
-                    <div class="header__numbers">
-                        <div class="header__number">
-                            <img src="./assets/img/phone.svg" alt="Телефон">
-                            <a href="tel:+375297184632">+375 (29) 718-46-32</a>
+        <div class="content">
+            <header class="header">
+                <div class="container header__container">
+                    <div class="header__logo-block">
+                        <img src="./assets/img/logo.png" alt="Sertifika Логотип" class="header__logo">
+                    </div>
+                    <div class="header__content">
+                        <div class="header__contacts">
+                            <h1 class="header__sitename">sertifika.by</h1>
+                            <div class="header__numbers">
+                                <div class="header__number">
+                                    <img src="./assets/img/phone.svg" alt="Телефон">
+                                    <a href="tel:+375297184632">+375 (29) 718-46-32</a>
+                                </div>
+                                <div class="header__number">
+                                    <img src="./assets/img/phone.svg" alt="Телефон">
+                                    <a href="tel:+375447272604">+375 (44) 727-26-04</a>
+                                </div>
+                                <div class="header__number">
+                                    <img src="./assets/img/phone.svg" alt="Телефон">
+                                    <a href="tel:+375212249878">+375 (212) 24-98-78</a>
+                                </div>
+                            </div>
+                            <div class="header__sitehome">
+                                <img src="./assets/img/mail.svg" alt="электронная почта">
+                                <img src="./assets/img/home.svg" alt="Главная">
+                                <img src="./assets/img/sitemap.svg" alt="Карта сайта">
+                            </div>
                         </div>
-                        <div class="header__number">
-                            <img src="./assets/img/phone.svg" alt="Телефон">
-                            <a href="tel:+375447272604">+375 (44) 727-26-04</a>
+                        <div class="header__menu">
+                            <div class="header__home">
+                                <img src="./assets/img/home-main.svg" alt="Главная">
+                            </div>
+                            <nav class="header__menu">
+                                <ul class="header__menu-list">
+                                    <li class="header__menu-item">О компании</li>
+                                    <li class="header__menu-item">Услуги</li>
+                                    <li class="header__menu-item">Контакты</li>
+                                    <li class="header__menu-item">Новости</li>
+                                    <li class="header__menu-item">Выполненные работы</li>
+                                </ul>
+                            </nav>
+                            <div class="header__search">
+                                <a href=""><img src="./assets/img/search.svg" alt="Поиск"></a>
+                            </div>
+                        </в>
+                    </div>
+                </div>  
+            </header>
+            
+            <section class="promo">
+                <div class="container">
+                    <div class="promo__info">Разработка технических условий, описаний, рецептур, конструкторской, технологической, эксплуатационной и другой нормативно-технической документации для производства продукции (работ, услуг), помощь в сертификации, декларировании соответствия, регистрации продукции (работ, услуг), в том числе изделий медицинского назначения и лекарственных средств (медпрепаратов), внедрение и сертификация систем менеджмента/управления (СМК (ISO), СУОТ (OH&S), СУОС, HACCP), документация по охране труда и пожарной безопасности, разработка норм ТЭР, документация по обращению с отходами производства и другие экологические документы, помощь в получении штрихкодов на продукцию, регистрации товарных знаков, патентов на изобретения (полезные модели, промышленные образцы)</div>
+                    <div class="promo__buttons">
+                        <button class="button promo__button">Задать вопрос</button>
+                        <button class=" button promo__button">Заказать услугу</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about">
+                <div class="container">
+                    <div class="about__price">
+                        <div class="about__price-text">
+                            Интересует стоимость? Скачивайте <a href="">Актуальный</a>  прайс-лист
                         </div>
-                        <div class="header__number">
-                            <img src="./assets/img/phone.svg" alt="Телефон">
-                            <a href="tel:+375212249878">+375 (212) 24-98-78</a>
+                        <div class="about__price-button">
+                            <button type="submit" class="button button-green">Cкачать прайс</button>
                         </div>
                     </div>
-                    <div class="header__sitehome">
+                    <div class="about__block">
+                        <div class="about__block-place">
+                            <img src="./assets/img/map.svg" alt="Карта">
+                            <div class="about__block-txt">Работаем с предприятиями всех
+                                регионов Беларуси, а также 
+                                Европейской части России </div>
+                        </div>
+                        <div class="about__block-sertification">
+                            <img src="./assets/img/ISO.svg" alt="Сертифицированная система менеджмента качества услуг">
+                            <div class="about__block-txt">Сертифицированная система менеджмента качества услуг в 
+                                области технического нормирования,
+                                стандартизации и сертификации </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="servises">
+                <div class="container">
+                    <h3 class="servises__heading">
+                        Перечень оказываемых услуг в области технического нормирования, стандартизации, сертификации:
+                    </h3>
+            
+                    <div class="servises__blocks">
+                        <div class="servises__block">
+                            <div class="servises__block-number">
+                                1
+                            </div>
+                            <div class="servises__block-name">
+                                Разработка технических условий, технических описаний, рецептур
+                            </div>
+                        </div>
+                        <div class="servises__block">
+                            <div class="servises__block-number">
+                                2
+                            </div>
+                            <div class="servises__block-name">
+                                Разработка конструкторской, технологической, эксплуатационной документации
+                            </div>
+                        </div>
+                        <div class="servises__block">
+                            <div class="servises__block-number">
+                                3
+                            </div>
+                            <div class="servises__block-name">
+                                Разработка документа «Обоснование безопасности» на машины (оборудование) 
+                            </div>
+                        </div>
+                        <div class="servises__block">
+                            <div class="servises__block-number">
+                                4
+                            </div>
+                            <div class="servises__block-name">
+                                Разработка паспортов безопасности химической и другой продукции
+                            </div>
+                        </div>
+                        <div class="servises__block">
+                            <div class="servises__block-number">
+                                5
+                            </div>
+                            <div class="servises__block-name">
+                                Организация и сопровождение сертификации и декларирования соответствия продукции (РБ, ЕАЭС, ЕС), в том числе строительных материалов и изделий
+                            </div>
+                        </div>      
+                        <div class="servises__block">
+                            <div class="servises__block-number">
+                                6
+                            </div>
+                            <div class="servises__block-name">
+                                 Организация и сопровождение сертификации и декларирования соответствия работ и услуг в строительстве, аттестации строительных и проектных организаций                </div>
+                        </div>                 
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact">
+                <div class="container">
+                    <h3 class="contact__heading">Не знаете, как сформулировать проблему, с которой столкнулись? Оставьте заявку и мы с Вами свяжемся</h3>
+                    <div class="contact__form">
+                        <input type="text" class="contact__form-input" placeholder="Имя" required>
+                        <input type="text" class="contact__form-input"placeholder="Телефон или e-mail*" required>
+                        <input type="text" class="contact__form-input" placeholder="Комментарий" >
+                    </div>
+                    <div class="contact__privacy">Нажимая кнопку “Записаться”, Вы соглашаетесь на обработку персональных данных. Не беспокойтесь, Ваши данные не будут переданы третьим лицам</div>
+                </div>
+            </section>        
+        </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__block">
+                    <div class="footer__logo">
+                        <img src="./assets/img/logo_footer.png" alt="Логотип sertifika.by">
+                    </div>
+                    <div class="footer__requisites">
+                        <div class="footer__heading">
+                            Реквизиты
+                        </div>
+                        <div class="line">
+        
+                        </div>
+                        <div class="footer__requisites-name">
+                            ИП Красовский С.В., УНП 390208900
+                        </div>
+                        <div class="footer__requisites-address">
+                            <img src="./assets/img/geo.svg" alt="Местоположение">
+                            Республика Беларусь, г. Витебск
+                        </div>
+        
+                    </div>
+                </div>
+                
+                <div class="footer__communication">
+                    <div class="footer__heading">
+                        Контакты
+                    </div>
+                    <div class="line">
+    
+                    </div>
+                    <div class="footer__communication-block">
+                        <div class="footer__communication-phones">
+                            <div class="footer__communication-phone first ">
+                                <img src="./assets/img/phone.svg" alt="Телефон">
+                                <a href="">+375 (29) 718-46-32</a>
+                                <img src="./assets/img/viber.svg" alt="viber">
+                            </div>
+                            <div class="footer__communication-phone">
+                                <img src="./assets/img/phone.svg" alt="Телефон">
+                                <a href="">+375 (212) 24-98-78</a>
+                            </div>
+                        </div>
+                        <div class="footer__communication-phones">
+                            <div class="footer__communication-phone first">
+                                <img src="./assets/img/phone.svg" alt="Телефон">
+                                <a href="">+375 (44) 727-26-04</a>
+                                <img src="./assets/img/whatsapp.svg" alt="whatsapp">
+                                <img src="./assets/img/telegram.svg" alt="telegram">
+                            </div>
+                            <div class="footer__communication-phone">
+                                <img src="./assets/img/mail.svg" alt="Телефон">
+                                <a href="">ksv2015t@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="footer__sitehome">
+                    <div class="footer__sitehome-heading">
+                        Карта сайта
+                    </div>
+                    <div class="footer__sitehome-content">
                         <img src="./assets/img/mail.svg" alt="электронная почта">
                         <img src="./assets/img/home.svg" alt="Главная">
                         <img src="./assets/img/sitemap.svg" alt="Карта сайта">
                     </div>
                 </div>
-                <div class="header__menu">
-                    <div class="header__home">
-                        <img src="./assets/img/home-main.svg" alt="Главная">
-                    </div>
-                    <nav class="header__menu">
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item">О компании</li>
-                            <li class="header__menu-item">Услуги</li>
-                            <li class="header__menu-item">Контакты</li>
-                            <li class="header__menu-item">Новости</li>
-                            <li class="header__menu-item">Выполненные работы</li>
-                        </ul>
-                    </nav>
-                    <div class="header__search">
-                        <a href=""><img src="./assets/img/search.svg" alt="Поиск"></a>
-                    </div>
-                </в>
             </div>
-        </div>  
-    </header>
+            <hr>
+            <div class="footer__under">
+                <div class="footer__copyright">
+                    sertifika.by © 2023 Все права защищены. 
+                </div>
+                <div class="footer__developer">
+                    <a href="https://anika-cs.by/">Разработка сайтов и программного обеспечения ООО “Креативная студия АникА”
+                    </a>
+                </div>
     
-    <section class="promo">
-        <div class="container">
-            <div class="promo__info">Разработка технических условий, описаний, рецептур, конструкторской, технологической, эксплуатационной и другой нормативно-технической документации для производства продукции (работ, услуг), помощь в сертификации, декларировании соответствия, регистрации продукции (работ, услуг), в том числе изделий медицинского назначения и лекарственных средств (медпрепаратов), внедрение и сертификация систем менеджмента/управления (СМК (ISO), СУОТ (OH&S), СУОС, HACCP), документация по охране труда и пожарной безопасности, разработка норм ТЭР, документация по обращению с отходами производства и другие экологические документы, помощь в получении штрихкодов на продукцию, регистрации товарных знаков, патентов на изобретения (полезные модели, промышленные образцы)</div>
-            <div class="promo__buttons">
-                <button class="button promo__button">Задать вопрос</button>
-                <button class=" button promo__button">Заказать услугу</button>
             </div>
         </div>
-    </section>
+    </footer>
     
-    <section class="about">
-        <div class="container">
-            <div class="about__price">
-                <div class="about__price-text">
-                    Интересует стоимость? Скачивайте <a href="">Актуальный</a>  прайс-лист
-                </div>
-                <div class="about__price-button">
-                    <button type="submit" class="button button-green">Cкачать прайс</button>
-                </div>
-            </div>
-            <div class="about__block">
-                <div class="about__block-place">
-                    <img src="./assets/img/map.svg" alt="Карта">
-                    <div class="about__block-txt">Работаем с предприятиями всех
-                        регионов Беларуси, а также 
-                        Европейской части России </div>
-                </div>
-                <div class="about__block-sertification">
-                    <img src="./assets/img/ISO.svg" alt="Сертифицированная система менеджмента качества услуг">
-                    <div class="about__block-txt">Сертифицированная система менеджмента качества услуг в 
-                        области технического нормирования,
-                        стандартизации и сертификации </div>
-                </div>
-            </div>
-        </div>
-    </section>
     
-    <section class="servises">
-        <div class="container">
-            <div class="servises__heading">
-                Перечень оказываемых услуг в области технического нормирования, стандартизации, сертификации:
-            </div>
-    
-            <div class="servises__blocks">
-                <div class="servises__block">1</div>
-                <div class="servises__block">2</div>
-                <div class="servises__block">3</div>
-                <div class="servises__block">4</div>           
-            </div>
-        </div>
-    </section>
+    </div>
 </body>
 </html>

@@ -15,5 +15,39 @@
     &__block{
         border: 1px solid #FFEF41;
         min-height: 200px;
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+        padding: 15px;
+        transition: 0.6s all;
+        &-number{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 122px;
+            color: $main-color;
+        }
+        &-name{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $black;
+
+        }
+        &:hover{
+            background: $main-color;
+            display: block;
+            padding-top: 45px;
+            .servises__block-number{
+                display: inline;
+                color:$black;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .servises__block-name{
+                display: inline;
+            }
+        }
     }
 }

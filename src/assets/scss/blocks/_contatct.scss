@@ -1,0 +1,41 @@
+.contact{
+    background: url("../img/form_bg.png")  center no-repeat;
+    background-size: cover;
+    min-height: 269px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    &__heading{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color:$black;
+        text-align: center;
+        margin: 0;
+    }
+    &__privacy{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $black;
+    }
+    &__form{
+        margin-top: 33px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        &-input{
+            width: 300px;
+            height: 45px;
+            background: #F5F5F5;
+            border-radius: 5px;
+            border:none;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color:$black;
+            padding-left: 15px;
+        }
+    }
+}
