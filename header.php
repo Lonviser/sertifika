@@ -55,9 +55,9 @@
                                 </div>
                             </div>
                             <div class="header__sitehome">
-                                <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/mail.svg" alt="электронная почта">
-                                <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/home.svg" alt="Главная">
-                                <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/sitemap.svg" alt="Карта сайта">
+                                <a href="mailto:<?php the_field('email',6);?>"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/mail.svg" alt="электронная почта"></a>
+                                <a href="/"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/home.svg" alt="Главная"></a>
+                                <a target="_blank" href="/sitemap.xml"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/sitemap.svg" alt="Карта сайта"></a>
                             </div>
                         </div>
                         <div class="header__menu">
