@@ -1,0 +1,21 @@
+.certificates{
+    &-page{
+        margin-bottom: 40px;
+        &-blocks{
+            display: flex;
+            justify-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &-block{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            img{
+                max-width: 340px;
+            }
+        }
+    }
+}

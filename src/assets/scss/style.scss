@@ -35,7 +35,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "blocks/footer";
 @import "blocks/breadcrumbs";
 @import "blocks/heading";
+
 @import "blocks/contacts-page";
+@import "blocks/information";
+@import "blocks/certificates";
+@import "blocks/vacancies";
 
 .container{
 	max-width: 1440px;

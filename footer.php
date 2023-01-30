@@ -38,11 +38,11 @@
         
                         </div>
                         <div class="footer__requisites-name">
-                            ИП Красовский С.В., УНП 390208900
+                        <?php the_field('rekvizity_imya',6);?>
                         </div>
                         <div class="footer__requisites-address">
                             <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/geo.svg" alt="Местоположение">
-                            Республика Беларусь, г. Витебск
+                            <?php the_field('rekvizity_adres',6);?>
                         </div>
         
                     </div>

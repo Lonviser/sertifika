@@ -1,0 +1,24 @@
+.information{
+    &-page{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+
+    }
+}
+
+@media(max-width:1024px){
+    .information{
+        &-page{
+            flex-direction: column;
+            &-block{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
