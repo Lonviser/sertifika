@@ -13,20 +13,17 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h2 class="heading">', '</h2>' ); ?>
-		<div class="line__pages"></div>
 	</header><!-- .entry-header -->
+	<div class="line"></div>
 
 	<div class="entry-content">
-		<?php
-		the_content();
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sertifika' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+	<?php
+					while ( have_posts() ) :
+						the_post();
+			
+						get_template_part( 'template-parts/content', get_post_type() );
+					endwhile; // End of the loop.
+					?>
 	</div><!-- .entry-content -->
 
 

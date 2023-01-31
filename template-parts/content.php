@@ -12,24 +12,24 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
 
 		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="entry-meta">
+			<div class="heading">
+                        <?php the_title();  ?>
+                    </div>
+                    <div class="line"></div>
 				<?php
 				sertifika_posted_on();
+				?>
+				|
+				<?php
 				sertifika_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php sertifika_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -55,9 +55,12 @@
 			)
 		);
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
-	<footer class="entry-footer">
-		<?php sertifika_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		<div class="news__page">
+		<div class="count_views"> <?php if(function_exists('the_views')) { the_views(); } ;?></div> 
+		<a class="news__link" href="/novosti/"><div> ← Вернуться к списку новостей</div></a>
+		</div>
+
+
 </article><!-- #post-<?php the_ID(); ?> -->

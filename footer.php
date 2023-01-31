@@ -13,13 +13,10 @@
 	<section class="contact">
                 <div class="container">
                     <h3 class="contact__heading">Не знаете, как сформулировать проблему, с которой столкнулись? Оставьте заявку и мы с Вами свяжемся</h3>
-                    <form class="contact__form">
-                        <input type="text" class="contact__form-input" placeholder="Имя" required>
-                        <input type="text" class="contact__form-input"placeholder="Телефон или e-mail*" required>
-                        <input type="text" class="contact__form-input" placeholder="Комментарий" >
-                        <button type="submit" class="button contact__form-button" class="button">Отправить</button>
-                    </form>
-                    <div class="contact__privacy">Нажимая кнопку “Записаться”, Вы соглашаетесь на обработку персональных данных. Не беспокойтесь, Ваши данные не будут переданы третьим лицам</div>
+                    <div class="contact__form">
+                    <?php echo do_shortcode( '[contact-form-7 id="38" title="Контактная форма 1"]' ); ?>
+                    </div>
+                    <div class="contact__privacy">Нажимая кнопку “Записаться”, Вы соглашаетесь на обработку персональных данных. Не беспокойтесь, Ваши данные не будут переданы третьим лицам
                 </div>
             </section> 
 </div> 

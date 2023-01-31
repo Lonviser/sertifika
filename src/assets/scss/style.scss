@@ -40,6 +40,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "blocks/information";
 @import "blocks/certificates";
 @import "blocks/vacancies";
+@import "blocks/news";
 
 .container{
 	max-width: 1440px;
@@ -83,9 +84,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .first{
 	margin-bottom: 14px;
 }
-.entry-content{
-	margin-bottom: 20px;
-}
+
 @media(max-width:950px){
 	.first{
 		margin-bottom: 0;
@@ -97,3 +96,4 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 a{
 	text-decoration: none;
 }
+

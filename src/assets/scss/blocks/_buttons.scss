@@ -14,3 +14,16 @@
         background: $second-color;
     }
 }
+
+input.wpcf7-form-control.has-spinner.wpcf7-submit{
+    width: 250px;
+    background:$main-color;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: $black;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

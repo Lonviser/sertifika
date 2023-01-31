@@ -1,0 +1,133 @@
+.news{
+    &__page{
+        margin-bottom: 40px;
+        margin-top: -30px;
+    }
+    &__link{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black;
+    }
+    &__info{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black;
+        padding-top: 16px;
+        padding-bottom: 5px;
+    }
+    &_page_block{
+        display: flex;
+        column-gap: 24px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #84FF98;
+    }
+    &-page{
+        margin-bottom: 40px;
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: $black;
+    }
+    &__later{
+        display: flex;
+        justify-content: flex-end;
+        a{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $black;
+        }
+    }
+}
+
+.heateor_sss_sharing_container.heateor_sss_horizontal_sharing {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.heateor_sss_sharing_title {
+    margin-right: 20px;
+}
+
+.actual-news{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+    margin-bottom: 20px;
+}
+
+.hot-blocks{
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.hot-block {
+    max-width: 265px;
+}
+
+.hot-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $black;
+}
+
+.actual-line{
+    border: 1px solid #84FF98;
+    margin-bottom: 20px;
+}
+
+time.updated {
+    display: none;
+}
+header.entry-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.auth_date{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.news-block__text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+@media(max-width:700px){
+    .news_page_block{
+        display: flex;
+        flex-direction: column;
+    }
+    .news-block__image {
+        img{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media(max-width:500px){
+    .hot-blocks{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
