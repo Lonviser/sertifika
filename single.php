@@ -41,6 +41,10 @@ get_header();
 		get_template_part( 'template-parts/content', get_post_type() );
 	endwhile; // End of the loop.
 	?>
+		<div class="news__page">
+		<div class="count_views"> <?php if(function_exists('the_views')) { the_views(); } ;?></div> 
+		<a class="news__link" href="/novosti/"><div> ← Вернуться к списку новостей</div></a>
+		</div>
 			</main>		
 	<div class="actual-line">
 	</div>

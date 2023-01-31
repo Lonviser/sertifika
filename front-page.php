@@ -49,53 +49,45 @@ get_header();
                     </h3>
             
                     <div class="servises__blocks">
-                        <div class="servises__block">
-                            <div class="servises__block-number">
-                                1
+                        <?php 
+                        $args = array(
+                            'post_type'      => 'servises',
+                            'post_status'    => 'publish',
+                            'posts_per_page' => - 1,
+                            'orderby'=> 'date', 
+                            'order' => 'ASC',
+                            
+
+                        );
+                        
+                        $query = new WP_Query( $args );
+                        
+                        if ( $query->have_posts() ) {
+                            while ( $query->have_posts() ) {
+                                $query->the_post();
+                                // Ваш код по выводу поста
+                                ?>
+                                <a href="<?php the_permalink(); ?>">
+                                <div class="servises__block">
+                                <div class="servises__block-number">
+                                    <?php the_excerpt(); ?>
+                                </div>
+                                <div class="servises__block-name">
+                                   <?php  the_title(); ?>
+                                </div>
                             </div>
-                            <div class="servises__block-name">
-                                Разработка технических условий, технических описаний, рецептур
-                            </div>
-                        </div>
-                        <div class="servises__block">
-                            <div class="servises__block-number">
-                                2
-                            </div>
-                            <div class="servises__block-name">
-                                Разработка конструкторской, технологической, эксплуатационной документации
-                            </div>
-                        </div>
-                        <div class="servises__block">
-                            <div class="servises__block-number">
-                                3
-                            </div>
-                            <div class="servises__block-name">
-                                Разработка документа «Обоснование безопасности» на машины (оборудование) 
-                            </div>
-                        </div>
-                        <div class="servises__block">
-                            <div class="servises__block-number">
-                                4
-                            </div>
-                            <div class="servises__block-name">
-                                Разработка паспортов безопасности химической и другой продукции
-                            </div>
-                        </div>
-                        <div class="servises__block">
-                            <div class="servises__block-number">
-                                5
-                            </div>
-                            <div class="servises__block-name">
-                                Организация и сопровождение сертификации и декларирования соответствия продукции (РБ, ЕАЭС, ЕС), в том числе строительных материалов и изделий
-                            </div>
-                        </div>      
-                        <div class="servises__block">
-                            <div class="servises__block-number">
-                                6
-                            </div>
-                            <div class="servises__block-name">
-                                 Организация и сопровождение сертификации и декларирования соответствия работ и услуг в строительстве, аттестации строительных и проектных организаций                </div>
-                        </div>                 
+                            </a>                        
+                       
+                                
+                               
+                        <?php                                 }
+                        } else {
+                            echo 'Ничего не найдено';
+                        }
+                        
+                        wp_reset_postdata();
+                        ?>
+                         
                     </div>
                 </div>
             </section>

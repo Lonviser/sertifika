@@ -181,3 +181,4 @@ function prefix_add_footer_styles() {
 	wp_enqueue_style( 'your-style-id', get_template_directory_uri() . '/dist/assets/css/style.min.css' );
 };
 add_action( 'get_footer', 'prefix_add_footer_styles' );
+

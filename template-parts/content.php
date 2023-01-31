@@ -57,10 +57,7 @@
 		?>
 	</div>
 
-		<div class="news__page">
-		<div class="count_views"> <?php if(function_exists('the_views')) { the_views(); } ;?></div> 
-		<a class="news__link" href="/novosti/"><div> ← Вернуться к списку новостей</div></a>
-		</div>
+	
 
 
 </article><!-- #post-<?php the_ID(); ?> -->

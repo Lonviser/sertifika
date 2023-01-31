@@ -45,7 +45,21 @@
         }
     }
 }
+@media(max-width:1100px){
+    .contact{
+        &__form{
+            form{
+                p{
+                    gap: 10px !important;
+                }
+            }
+        }
+    }
+    input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact__form-input {
+        width: 200px;
+    }
 
+}
 @media(max-width:930px){
     .contact{
         &__form{
@@ -61,6 +75,9 @@
             }
             
         }
+    }
+    input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.contact__form-input {
+        width: 100%;
     }
 }
 
