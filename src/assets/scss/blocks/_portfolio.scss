@@ -1,0 +1,39 @@
+.portfolio{
+    &__blocks{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+    &__block{
+        text-align: center;
+    }
+}
+
+@media(max-width:1050px){
+    .portfolio{
+        &__blocks{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+}
+
+@media(max-width:810px){
+    .portfolio{
+        &__blocks{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+}
+
+@media(max-width:530px){
+    .portfolio{
+        &__blocks{
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+
+}
