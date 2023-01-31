@@ -1269,6 +1269,45 @@ header.entry-header {
     }
 }
 
+.page-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-404 a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161616;
+}
+
+.page-404-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-404-img img {
+    width: 25%;
+}
+
+.search-page {
+    margin-bottom: 40px;
+}
+
+.search-page a {
+    color: #161616;
+}
+
+h1.page-title {
+    font-size: 22px;
+}
+
 .container {
     max-width: 1440px;
     padding-left: 20px;

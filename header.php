@@ -74,7 +74,7 @@
                                 </ul>
                             </nav>
                             <div class="header__search">
-                                <a href=""><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/search.svg" alt="Поиск"></a>
+                                <?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
                             </div>
                         </в>
                     </div>

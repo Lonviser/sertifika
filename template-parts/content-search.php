@@ -16,8 +16,11 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			sertifika_posted_on();
-			sertifika_posted_by();
+				sertifika_posted_by();
+			?>
+			|
+			<?php
+				sertifika_posted_on();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -28,8 +31,4 @@
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php sertifika_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -42,6 +42,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "blocks/vacancies";
 @import "blocks/news";
 @import "blocks/portfolio";
+@import "blocks/page-404";
+@import "blocks/search-page";
 
 .container{
 	max-width: 1440px;

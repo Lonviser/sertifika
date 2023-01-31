@@ -7,54 +7,47 @@
  * @package sertifika
  */
 
+
 get_header();
 ?>
+	<div class="breadcrumbs">
+		<div class="container">
+			<a href="">Главная</a> <span class="breadcrumbs_separator"> | </span> Страница не найдена
+		</div>
+	</div>
 
-	<main id="primary" class="site-main">
+	<div class="container">
+                    <div class="about__price">
+                        <div class="about__price-text">
+                            Интересует стоимость? Скачивайте <a href="<?php the_field('price-list',6);?>">Актуальный</a>  прайс-лист
+                        </div>
+                        <div class="about__price-button">
+                            <a href="<?php the_field('price-list');?>"><button type="submit" class="button button-green">Cкачать прайс</button></a>
+                        </div>
+                    </div>
+	</div>
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'sertifika' ); ?></h1>
-			</header><!-- .page-header -->
+	<div class="container">
+	<main>
+		<div class="heading">Страница не найдена</div>
+		<div class="line"></div>
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'sertifika' ); ?></p>
+		<div class="page-404">
+			<div class="page-404-img">
+				<img src="<?php echo bloginfo('template_url');?>/dist/assets/img/404.jpg" alt="Ошибка 404">
+			</div>
+			<div class="page-404-txt">
+				<a href="/">Вернуться на главную</a>
+			</div>
+		</div>
 
-					<?php
-					get_search_form();
+		
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+	</main>
+			
+	</div>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'sertifika' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$sertifika_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'sertifika' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$sertifika_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
 
 <?php
 get_footer();
+
