@@ -1308,6 +1308,49 @@ h1.page-title {
     font-size: 22px;
 }
 
+.customers-page-table {
+    margin-bottom: 40px;
+}
+
+.customers-page-heading {
+    display: grid;
+    grid-template-columns: 325px 1.5fr 2fr;
+    background: #FFEF41;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.customers-page-heading div {
+    padding: 20px;
+    border: 1px solid #A7A4A4;
+}
+
+.customers-page-row {
+    display: grid;
+    grid-template-columns: 325px 1.5fr 2fr;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #161616;
+}
+
+.customers-page-row div {
+    padding: 20px;
+    border: 1px solid #A7A4A4;
+}
+
+@media (max-width: 900px) {
+    .customers-page-heading {
+        grid-template-columns: 1fr;
+    }
+
+    .customers-page-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 .container {
     max-width: 1440px;
     padding-left: 20px;
