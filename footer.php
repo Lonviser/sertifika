@@ -91,7 +91,7 @@
             <hr>
             <div class="footer__under">
                 <div class="footer__copyright">
-                    sertifika.by © 2023 Все права защищены. 
+                    sertifika.by © <?php echo date("Y"); ?> Все права защищены. 
                 </div>
                 <div class="footer__developer">
                     <a href="https://anika-cs.by/">Разработка сайтов и программного обеспечения ООО “Креативная студия АникА”
@@ -101,8 +101,23 @@
             </div>
         </div>
     </footer>
-    
-    
+    <div id="test-form" class="mfp-hide white-popup-block">
+        <fieldset style="border:0;">
+
+            <h3 class="heading__popup">Задать вопрос</h3>
+            <div class="popup-form">
+                    <?php echo do_shortcode('[contact-form-7 id="187" title="popup-form"]'); ?>
+            </div>
+            </div>
+        </fieldset>
+    </form>
+    <div id="order-form" class="mfp-hide white-popup-block">
+            <h3 class="heading__popup">Заказать услугу</h3>
+            <div class="popup-form">
+                    <?php echo do_shortcode('[contact-form-7 id="188" title="popup-order"]'); ?>
+            </div>
+            </div>
+    </form>
     </div>
 	<?php wp_footer(); ?>
 </body>

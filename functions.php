@@ -1,4 +1,14 @@
 <?php
+
+function modify_jquery() {
+	if (!is_admin()) {
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', get_template_directory_uri() . '/js/jquery.js', false, '1.11.3', true);
+	wp_enqueue_script('jquery');
+	}
+	}
+	add_action('init', 'modify_jquery');
+
 /**
  * sertifika functions and definitions
  *
@@ -141,7 +151,11 @@ function sertifika_scripts() {
 	wp_enqueue_style( 'sertifika-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'sertifika-style', 'rtl', 'replace' );
 
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/dist/js/main.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'sertifika-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'sertifika-pop-up', get_template_directory_uri() . '/js/popup.js', array('jquery'), _S_VERSION, true );
+	wp_enqueue_script( 'sertifika-main', get_template_directory_uri() . '/js/main.js', array('jquery'), _S_VERSION, true );
+
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/dist/assets/css/style.css' );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -181,4 +195,12 @@ function prefix_add_footer_styles() {
 	wp_enqueue_style( 'your-style-id', get_template_directory_uri() . '/dist/assets/css/style.min.css' );
 };
 add_action( 'get_footer', 'prefix_add_footer_styles' );
+
+add_filter( 'kses_allowed_protocols', 'add_viber_to_allowed_protocols' );
+
+function add_viber_to_allowed_protocols( $protocols ) {
+	$protocols[] = 'viber';
+
+	return $protocols;
+}
 

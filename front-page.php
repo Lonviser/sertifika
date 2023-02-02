@@ -9,12 +9,21 @@ get_header();
                 <div class="container">
                     <div class="promo__info">Разработка технических условий, описаний, рецептур, конструкторской, технологической, эксплуатационной и другой нормативно-технической документации для производства продукции (работ, услуг), помощь в сертификации, декларировании соответствия, регистрации продукции (работ, услуг), в том числе изделий медицинского назначения и лекарственных средств (медпрепаратов), внедрение и сертификация систем менеджмента/управления (СМК (ISO), СУОТ (OH&S), СУОС, HACCP), документация по охране труда и пожарной безопасности, разработка норм ТЭР, документация по обращению с отходами производства и другие экологические документы, помощь в получении штрихкодов на продукцию, регистрации товарных знаков, патентов на изобретения (полезные модели, промышленные образцы)</div>
                     <div class="promo__buttons">
-                        <button class="button promo__button">Задать вопрос</button>
-                        <button class=" button promo__button">Заказать услугу</button>
+                        <a class="popup-with-form" href="#test-form"><button class="button promo__button">Задать вопрос</button></a> 
+                        <a href="#order-form" class="popup-with-form" ><button class=" button promo__button">Заказать услугу</button></a>
+                        
                     </div>
                 </div>
             </section>
+
             
+
+        <!-- form itself -->
+
+
+            <!-- link that opens popup -->
+
+<!-- form itself -->
             <section class="about">
                 <div class="container">
                     <div class="about__price">
@@ -92,7 +101,6 @@ get_header();
                 </div>
             </section>
             
-       
     </main>
         <?php
         get_footer();

@@ -25,6 +25,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "abstracts/abstracts";
 @import "generic/normalize";
 @import "generic/box-sizing";
+@import "generic/magnific-popup";
 
 @import "blocks/header";
 @import "blocks/promo";
@@ -45,6 +46,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "blocks/page-404";
 @import "blocks/search-page";
 @import "blocks/customers";
+@import "blocks/popup";
 
 .container{
 	max-width: 1440px;
