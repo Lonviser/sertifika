@@ -16,14 +16,6 @@ get_header();
                 </div>
             </section>
 
-            
-
-        <!-- form itself -->
-
-
-            <!-- link that opens popup -->
-
-<!-- form itself -->
             <section class="about">
                 <div class="container">
                     <div class="about__price">

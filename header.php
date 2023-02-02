@@ -37,38 +37,43 @@
 
         <header class="header">
                 <div class="container burger__position">
+                    <h2 class="header__name-burger">sertifika.by</h2>
                     <div class="header__burger">
                         <span></span>
                     </div>
                     <nav class="menu header__menu">
-                        <div>
-                            <div class="header-position">
-                                <div class="header_first-block">
-                                    <div class="header_contact">
-                                        <div>
-                                            <img src="assets/img/location.svg" alt="Местоположение"> 247760, Гомельская область, г.Мозырь, 1-й пер.Берёзовый, 5А</div>
-                                    </div>
-                                    <div class="reception">
-                                        <img src="assets\img\phone.svg" alt="Телефон">
-                                        <a href="tel:+375236223611"><span>+375 236 22-36-11 Приемная</span></a>
-                                    </div>
+                        <div class="header__content">
+                        <div class="header__logo-block">
+                        <a href="/"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/logo.webp" alt="Sertifika Логотип" class="header__logo"></a>
+                        </div>
+                        <div class="header-position">
+                            <div class="header__contacts">
+                            <h1 class="header__sitename">sertifika.by</h1>
+                            <div class="header__numbers">
+                                <div class="header__number">
+                                    <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/phone.svg" alt="Телефон">
+                                    <a href="tel:+375297184632">+375 (29) 718-46-32</a>
                                 </div>
-                                <div class="header_additional">
-                                    <div class="lang-zone">
-                                        <a href="">RU</a>
-                                        <a href="">БЕЛ</a>
-                                        <a href="">ENG</a></div>
-                                    <div class="low-vision">
-                                        <img src="assets\img\eye.svg" alt="глаз">
-                                        <div>Версия для слабовидящих</div>
-                                        <img src="assets\img\sitemap.svg" alt="">
-                                    </div>
+                                <div class="header__number">
+                                    <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/phone.svg" alt="Телефон">
+                                    <a href="tel:+375447272604">+375 (44) 727-26-04</a>
+                                </div>
+                                <div class="header__number">
+                                    <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/phone.svg" alt="Телефон">
+                                    <a href="tel:+375212249878">+375 (212) 24-98-78</a>
+                                </div>
+                                </div>
+                                <div class="header__sitehome">
+                                    <a href="mailto:<?php the_field('email',6);?>"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/mail.svg" alt="электронная почта"></a>
+                                    <a href="/"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/home.svg" alt="Главная"></a>
+                                    <a target="_blank" href="/sitemap.xml"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/sitemap.svg" alt="Карта сайта"></a>
                                 </div>
                             </div>
+
                             <ul class="menu__list">
-                                <li class="menu__link home-link"> <img src="assets/img/home.svg" alt=""></li>
+                                <li class="menu__link home-link"><a href=""><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/home-main.svg" alt="Главная"></a></li>
                                 <li>
-                                    <a href="" class="menu__link">Об учереждении</a>
+                                    <a href="" class="menu__link">О компании</a>
                                     <span class="menu__arrow arrow"></span>
                                     <ul class="sub-menu__list">
                                         <li>
@@ -86,7 +91,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="" class="menu__link">Учебное отделение</a>
+                                    <a href="" class="menu__link">Услуги</a>
                                     <span class="menu__arrow arrow"></span>
                                     <ul class="sub-menu__list">
                                         <li>
@@ -105,7 +110,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="" class="menu__link">Спортивное отделение</a>
+                                    <a href="" class="menu__link">Контакты</a>
                                     <span class="menu__arrow arrow"></span>
                                     <ul class="sub-menu__list">
                                         <li>
@@ -129,17 +134,17 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Учебно-спортивная база</a>
-                                        </li>
+                  
                                         <li>
                                             <a href="" class="sub-menu__link">Мастера спорта международного класса </a>
                                         </li>
-                                    </ul>
-                                    
+                                    </ul> 
                                 </li>
                                 <li>
-                                    <a href="" class="menu__link">Воспитательное отделение</a>
+                                        <a href="" class="menu__link">Новости</a>
+                                        </li>
+                                <li>
+                                    <a href="" class="menu__link">Выполненные работы</a>
                                     <span class="menu__arrow arrow"></span>
                                     <ul class="sub-menu__list">
                                         <li>
@@ -168,58 +173,12 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li> <div class="header__search">
+                                <?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
+                            </div></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </header>
-        <!--
-
-            <header class="header">
-                <div class="container header__container">
-                    <div class="header__logo-block">
-                        <a href="/"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/logo.webp" alt="Sertifika Логотип" class="header__logo"></a>
-                    </div>
-                    <div class="header__content">
-                        <div class="header__contacts">
-                            <h1 class="header__sitename">sertifika.by</h1>
-                            <div class="header__numbers">
-                                <div class="header__number">
-                                    <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/phone.svg" alt="Телефон">
-                                    <a href="tel:+375297184632">+375 (29) 718-46-32</a>
-                                </div>
-                                <div class="header__number">
-                                    <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/phone.svg" alt="Телефон">
-                                    <a href="tel:+375447272604">+375 (44) 727-26-04</a>
-                                </div>
-                                <div class="header__number">
-                                    <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/phone.svg" alt="Телефон">
-                                    <a href="tel:+375212249878">+375 (212) 24-98-78</a>
-                                </div>
-                            </div>
-                            <div class="header__sitehome">
-                                <a href="mailto:<?php the_field('email',6);?>"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/mail.svg" alt="электронная почта"></a>
-                                <a href="/"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/home.svg" alt="Главная"></a>
-                                <a target="_blank" href="/sitemap.xml"><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/sitemap.svg" alt="Карта сайта"></a>
-                            </div>
-                        </div>
-                        <div class="header__menu">
-                            <div class="header__home">
-                                <a href=""><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/home-main.svg" alt="Главная"></a>
-                            </div>
-                            <nav class="header__menu">
-                                <ul class="header__menu-list">
-                                    <li class="header__menu-item">О компании</li>
-                                    <li class="header__menu-item">Услуги</li>
-                                    <li class="header__menu-item">Контакты</li>
-                                    <li class="header__menu-item">Новости</li>
-                                    <li class="header__menu-item">Выполненные работы</li>
-                                </ul>
-                            </nav>
-                            <div class="header__search">
-                                <?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
-                            </div>
-                        </в>
-                    </div>
-                </div>  
-            </header>
+   

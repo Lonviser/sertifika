@@ -204,3 +204,17 @@ function add_viber_to_allowed_protocols( $protocols ) {
 	return $protocols;
 }
 
+add_filter('nav_menu_link_attributes', 'filter_nav_menu_link_attributes', 10, 3);
+function filter_nav_menu_link_attributes($atts, $item, $args) {
+    if ($args->menu === 'Main') {
+        $atts['class'] = 'menu__link';
+
+        if ($item->current) {
+            $atts['class'] .= ' select__link';
+        }
+    };
+
+    return $atts;
+}
+
+?>
