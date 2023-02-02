@@ -7,7 +7,7 @@ get_header();
 
     <div class="breadcrumbs">   
 		<div class="container">
-			<a href="">Главная</a> <span class="breadcrumbs_separator"> |  <?php the_title(); ?>
+			<a href="/">Главная</a> <span class="breadcrumbs_separator"> |  <?php the_title(); ?>
 		</div>
 	</div>
 
@@ -52,7 +52,7 @@ get_header();
                         <div>
                         <a href="<?php the_permalink(); ?>"><p class="news-title"><?php the_title(); ?></p></a>
                         <div class="auth_date"> 
-                        <span class="news-author-date"><?php echo get_the_date('d.m.Y') ?></span> <span news-author-date>|</span> <span class="news-author-date"><?php the_author();?></span>
+                        <span class="news-author-date"><?php echo get_the_date('D.M.Y') ?></span> <span news-author-date>|</span> <span class="news-author-date"><?php the_author();?></span>
                         </div>
                         <p class="txt-news"><?php the_excerpt(); ?></p>
                         </div>

@@ -1,3 +1,5 @@
+
+
 <?php
 
 /**
@@ -70,113 +72,23 @@
                                 </div>
                             </div>
 
-                            <ul class="menu__list">
-                                <li class="menu__link home-link"><a href=""><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/home-main.svg" alt="Главная"></a></li>
-                                <li>
-                                    <a href="" class="menu__link">О компании</a>
-                                    <span class="menu__arrow arrow"></span>
-                                    <ul class="sub-menu__list">
-                                        <li>
-                                            <a href="" class="sub-menu__link">Администрация</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Новости</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Охрана труда</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Нормативная база </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="" class="menu__link">Услуги</a>
-                                    <span class="menu__arrow arrow"></span>
-                                    <ul class="sub-menu__list">
-                                        <li>
-                                            <a href="" class="sub-menu__link">Педагогический состав</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Права и обязанности учащихся</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Электронные версии учебников </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Интернет-ресурсы системы образования </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <a href="" class="menu__link">Контакты</a>
-                                    <span class="menu__arrow arrow"></span>
-                                    <ul class="sub-menu__list">
-                                        <li>
-                                            <a href="" class="sub-menu__link">Кадровый состав</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Отделения</a>
-                                            <span class="sub-menu__arrow arrow"></span>
-                                            <ul class="sub-sub-menu__list">
-                                                <li>
-                                                    <a href="" class="sub-sub-menu__link">Гребля на байдарках и каноэ</a>
-                                                </li>
-                                                <li>
-                                                    <a href="" class="sub-sub-menu__link">Академическая гребля</a>
-                                                </li>
-                                                <li>
-                                                    <a href="" class="sub-sub-menu__link">Лёгкая атлетика</a>
-                                                </li>
-                                                <li>
-                                                    <a href="" class="sub-sub-menu__link">Тяжелая атлетика</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                  
-                                        <li>
-                                            <a href="" class="sub-menu__link">Мастера спорта международного класса </a>
-                                        </li>
-                                    </ul> 
-                                </li>
-                                <li>
-                                        <a href="" class="menu__link">Новости</a>
-                                        </li>
-                                <li>
-                                    <a href="" class="menu__link">Выполненные работы</a>
-                                    <span class="menu__arrow arrow"></span>
-                                    <ul class="sub-menu__list">
-                                        <li>
-                                            <a href="" class="sub-menu__link">Кадровый состав</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">План социальной воспитательной и идеологической работы</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Родителям </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">МЧС информирует </a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">ГАИ информирует</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Профилактика правонарушений и преступлений</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Профилактика ОРВИ и коронавирусной инфекции</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="sub-menu__link">Правовые знания</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li> <div class="header__search">
+                            <div class="header__menu__list">
+                                <div class="menu__link home-link"><a href=""><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/home-main.svg" alt="Главная"></a></div>
+                                <?php
+                                wp_nav_menu( [
+                                    'menu'            => 'Main',
+                                    'container'       => false,
+                                    'menu_class'      => 'menu__list',
+                                    'echo'            => true,
+                                    'fallback_cb'     => 'wp_page_menu',
+                                    'items_wrap'      => '<ul  class="menu__list">%3$s</ul>',
+                                    'depth'           => 3,
+                                ] );
+                            ?>
+                                <div> <div class="header__search">
                                 <?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
-                            </div></li>
-                            </ul>
+                            </div></div>
+                            </div>
                         </div>
                     </nav>
                 </div>

@@ -95,6 +95,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	.first{
 		margin-bottom: 0;
 	}
+	.heateor_sss_sharing_container.heateor_sss_horizontal_sharing {
+		display: flex;
+		flex-direction: column;
+	}
 }
 *{
 	font-family: 'Montserrat', sans-serif;
@@ -103,3 +107,7 @@ a{
 	text-decoration: none;
 }
 
+
+header.entry-header {
+	background:white;
+}

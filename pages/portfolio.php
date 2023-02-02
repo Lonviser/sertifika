@@ -7,7 +7,7 @@ get_header();
 
     <div class="breadcrumbs">   
 		<div class="container">
-			<a href="">Главная</a> <span class="breadcrumbs_separator"> | </span>Выполненные работы<span class="breadcrumbs_separator"> | </span>  <?php the_title(); ?>
+			<a href="/">Главная</a> <span class="breadcrumbs_separator"> | </span>Выполненные работы<span class="breadcrumbs_separator"> | </span>  <?php the_title(); ?>
 		</div>
 	</div>
 

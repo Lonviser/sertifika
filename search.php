@@ -12,7 +12,7 @@ get_header();
 ?>
 	<div class="breadcrumbs">
 		<div class="container">
-			<a href="">Главная</a> <span class="breadcrumbs_separator"> | </span> Поиск
+			<a href="/">Главная</a> <span class="breadcrumbs_separator"> | </span> Поиск
 		</div>
 	</div>
 

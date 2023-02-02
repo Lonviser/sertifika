@@ -7,7 +7,7 @@ get_header();
     <main>
     <section class="promo">
                 <div class="container">
-                    <div class="promo__info">Разработка технических условий, описаний, рецептур, конструкторской, технологической, эксплуатационной и другой нормативно-технической документации для производства продукции (работ, услуг), помощь в сертификации, декларировании соответствия, регистрации продукции (работ, услуг), в том числе изделий медицинского назначения и лекарственных средств (медпрепаратов), внедрение и сертификация систем менеджмента/управления (СМК (ISO), СУОТ (OH&S), СУОС, HACCP), документация по охране труда и пожарной безопасности, разработка норм ТЭР, документация по обращению с отходами производства и другие экологические документы, помощь в получении штрихкодов на продукцию, регистрации товарных знаков, патентов на изобретения (полезные модели, промышленные образцы)</div>
+                    <div class="promo__info"><?php the_field('bolshoj_tekst');?></div>
                     <div class="promo__buttons">
                         <a class="popup-with-form" href="#test-form"><button class="button promo__button">Задать вопрос</button></a> 
                         <a href="#order-form" class="popup-with-form" ><button class=" button promo__button">Заказать услугу</button></a>
@@ -28,16 +28,12 @@ get_header();
                     </div>
                     <div class="about__block">
                         <div class="about__block-place">
-                            <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/map.svg" alt="Карта">
-                            <div class="about__block-txt">Работаем с предприятиями всех
-                                регионов Беларуси, а также 
-                                Европейской части России </div>
+                            <img src="<?php the_field('kartinka_1');?>">
+                            <div class="about__block-txt"><?php the_field('test');?></div>
                         </div>
                         <div class="about__block-sertification">
-                            <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/ISO.svg" alt="Сертифицированная система менеджмента качества услуг">
-                            <div class="about__block-txt">Сертифицированная система менеджмента качества услуг в 
-                                области технического нормирования,
-                                стандартизации и сертификации </div>
+                            <img src="<?php the_field('kartinka_2');?>">
+                            <div class="about__block-txt"><?php the_field('test_2');?> </div>
                         </div>
                     </div>
                 </div>
@@ -46,7 +42,7 @@ get_header();
             <section class="servises">
                 <div class="container">
                     <h3 class="servises__heading">
-                        Перечень оказываемых услуг в области технического нормирования, стандартизации, сертификации:
+                    <?php the_field('zagolovok');?>
                     </h3>
             
                     <div class="servises__blocks">
