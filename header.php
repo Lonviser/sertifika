@@ -33,6 +33,148 @@
     <div class="wrapper">
     
         <div class="content">
+
+
+        <header class="header">
+                <div class="container burger__position">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="menu header__menu">
+                        <div>
+                            <div class="header-position">
+                                <div class="header_first-block">
+                                    <div class="header_contact">
+                                        <div>
+                                            <img src="assets/img/location.svg" alt="Местоположение"> 247760, Гомельская область, г.Мозырь, 1-й пер.Берёзовый, 5А</div>
+                                    </div>
+                                    <div class="reception">
+                                        <img src="assets\img\phone.svg" alt="Телефон">
+                                        <a href="tel:+375236223611"><span>+375 236 22-36-11 Приемная</span></a>
+                                    </div>
+                                </div>
+                                <div class="header_additional">
+                                    <div class="lang-zone">
+                                        <a href="">RU</a>
+                                        <a href="">БЕЛ</a>
+                                        <a href="">ENG</a></div>
+                                    <div class="low-vision">
+                                        <img src="assets\img\eye.svg" alt="глаз">
+                                        <div>Версия для слабовидящих</div>
+                                        <img src="assets\img\sitemap.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="menu__list">
+                                <li class="menu__link home-link"> <img src="assets/img/home.svg" alt=""></li>
+                                <li>
+                                    <a href="" class="menu__link">Об учереждении</a>
+                                    <span class="menu__arrow arrow"></span>
+                                    <ul class="sub-menu__list">
+                                        <li>
+                                            <a href="" class="sub-menu__link">Администрация</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Новости</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Охрана труда</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Нормативная база </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="menu__link">Учебное отделение</a>
+                                    <span class="menu__arrow arrow"></span>
+                                    <ul class="sub-menu__list">
+                                        <li>
+                                            <a href="" class="sub-menu__link">Педагогический состав</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Права и обязанности учащихся</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Электронные версии учебников </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Интернет-ресурсы системы образования </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="" class="menu__link">Спортивное отделение</a>
+                                    <span class="menu__arrow arrow"></span>
+                                    <ul class="sub-menu__list">
+                                        <li>
+                                            <a href="" class="sub-menu__link">Кадровый состав</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Отделения</a>
+                                            <span class="sub-menu__arrow arrow"></span>
+                                            <ul class="sub-sub-menu__list">
+                                                <li>
+                                                    <a href="" class="sub-sub-menu__link">Гребля на байдарках и каноэ</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="sub-sub-menu__link">Академическая гребля</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="sub-sub-menu__link">Лёгкая атлетика</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="sub-sub-menu__link">Тяжелая атлетика</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Учебно-спортивная база</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Мастера спорта международного класса </a>
+                                        </li>
+                                    </ul>
+                                    
+                                </li>
+                                <li>
+                                    <a href="" class="menu__link">Воспитательное отделение</a>
+                                    <span class="menu__arrow arrow"></span>
+                                    <ul class="sub-menu__list">
+                                        <li>
+                                            <a href="" class="sub-menu__link">Кадровый состав</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">План социальной воспитательной и идеологической работы</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Родителям </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">МЧС информирует </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">ГАИ информирует</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Профилактика правонарушений и преступлений</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Профилактика ОРВИ и коронавирусной инфекции</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="sub-menu__link">Правовые знания</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        <!--
+
             <header class="header">
                 <div class="container header__container">
                     <div class="header__logo-block">
