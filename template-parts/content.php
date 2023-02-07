@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<div class="entry-header">
 		<?php
 
 		if ( 'post' === get_post_type() ) :
@@ -29,7 +29,7 @@
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</в><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php

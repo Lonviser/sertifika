@@ -1,9 +1,10 @@
 .about{
     &__price{
-        padding-top: 26px;
+        padding-top: 15px;
         display: flex;
         justify-content: space-between;
         transition: 0.5s all;
+        align-items: center;
         &-text{
             font-style: normal;
             font-weight: 700;
@@ -13,7 +14,9 @@
             color: $black;
             a{
                 color: #84FF98;
+                font-weight: 800;
                 text-decoration: none;
+                font-size: 20px;
             }
             a:hover{
                 text-decoration:underline;
@@ -22,6 +25,7 @@
     }
     &__block{
         display: grid;
+        margin-top:40px;
         grid-template-columns: 1fr 1fr;
         &-place{
             display: flex;

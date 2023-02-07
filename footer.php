@@ -25,7 +25,7 @@
             <div class="footer__content">
                 <div class="footer__block">
                     <div class="footer__logo">
-                        <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/logo_footer.webp" alt="Логотип sertifika.by">
+                        <a href="/"> <img src="<?php echo bloginfo('template_url');?>/dist/assets/img/logo_footer.webp" alt="Логотип sertifika.by"></a>
                     </div>
                     <div class="footer__requisites">
                         <div class="heading">

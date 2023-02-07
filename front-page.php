@@ -38,7 +38,6 @@ get_header();
                     </div>
                 </div>
             </section>
-            
             <section class="servises">
                 <div class="container">
                     <h3 class="servises__heading">

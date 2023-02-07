@@ -29,16 +29,21 @@ get_header();
                     <?php the_title(); ?>
                     </div>
                     <div class="line"></div>
-                    <div class="vacancies-page-blocks">
-                    <?php 
-                        $loop = CFS()-> get('_vacancies');
-                        foreach($loop as $row){
-                            ?>
-                            <div class="vacancies-page-block"><?= $row['_vacancy'] ?></div>
-                            <?php
-                        }
-                        ?>
-                    </div>                    
+                    <?php
+                    while ( have_posts() ) :
+                        the_post();
+
+                        get_template_part( 'template-parts/content', 'page' );
+
+                        // If comments are open or we have at least one comment, load up the comment template.
+                        if ( comments_open() || get_comments_number() ) :
+                            comments_template();
+                        endif;
+
+                    endwhile; // End of the loop.
+                    ?>
+
+			</main>     
             </div>
         </div>
 	</main>

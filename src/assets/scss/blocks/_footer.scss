@@ -121,5 +121,9 @@
         &__communication{
             width: auto;
         }
+        .footer__content {
+            display: grid;
+            grid-auto-columns: 1fr;
+        }
     }
 }

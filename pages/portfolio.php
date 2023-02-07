@@ -39,7 +39,7 @@ get_header();
                         $args = array(
                             'post_type'      => 'portfolio',
                             'post_status'    => 'publish',
-                            'posts_per_page' => 12,
+                            'posts_per_page' => 16,
                             'orderby'=> 'date', 
                             'order' => 'ASC',
                         );
@@ -76,7 +76,6 @@ get_header();
                 <div class="pagination-position">
                 <div class="pagination">
                     <?php
-                    // вывод pagination
                     echo paginate_links( array(
                         'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
                         'total'        => $posts->max_num_pages,

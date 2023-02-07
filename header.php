@@ -73,7 +73,12 @@
                             </div>
 
                             <div class="header__menu__list">
-                                <div class="menu__link home-link"><a href=""><img src="<?php echo bloginfo('template_url');?>/dist/assets/img/home-main.svg" alt="Главная"></a></div>
+                                <div class="menu__link home-link"><a href=""><img class="
+                                <?php if(is_front_page()){
+                                    echo ("menu__under");
+                                }
+                                ?>
+                                " src="<?php echo bloginfo('template_url');?>/dist/assets/img/home-main.svg" alt="Главная"></a></div>
                                 <?php
                                 wp_nav_menu( [
                                     'menu'            => 'Main',
@@ -85,7 +90,7 @@
                                     'depth'           => 3,
                                 ] );
                             ?>
-                                <div> <div class="header__search">
+                                <div class="header__search-block"> <div class="header__search">
                                 <?php echo do_shortcode( '[wpdreams_ajaxsearchlite]' ); ?>
                             </div></div>
                             </div>
@@ -94,3 +99,26 @@
                 </div>
             </header>
    
+
+            <?php
+            if ( is_page_template( ['pages/information.php', 'pages/certificates.php','pages/vacancies.php'] ) ) { ?>
+            <style type="text/css">
+                li#menu-item-267 {
+                    padding-bottom: 5px;
+                    border-bottom: 3px solid #ff0;
+            }
+            </style>
+            <?php } else { ?>
+                <style type="text/css">
+                li#menu-item-267 {
+                    background:red;
+            }
+            <?php } ?>
+
+            <style type="text/css">
+
+            ul.menu__list:first-child(){
+                padding-bottom: 5px;
+                border-bottom: 3px solid #ff0;
+            }
+            </style>
