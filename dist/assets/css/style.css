@@ -1040,7 +1040,7 @@ a.sub-menu__link.parent {
     position: absolute;
     left: 0;
     top: 10px;
-    margin: 18px 0px 0px 0px;
+    padding: 18px 0px 0px 0px;
 }
 
 .sub-menu > li {
@@ -1787,12 +1787,21 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 
 .about__block-place {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
 }
 
 .about__block-txt {
-    max-width: 315px;
+    max-width: 390px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #161616;
+}
+
+.about__block-txt2 {
+    max-width: 500px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1802,8 +1811,13 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
 
 .about__block-sertification {
     display: flex;
-    -moz-column-gap: 25px;
-    column-gap: 25px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.about__block-sertification img {
+    max-width: 147px;
 }
 
 @media (max-width: 900px) {
@@ -1914,6 +1928,10 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     font-size: 100px;
     line-height: 122px;
     color: #FFEF41;
+}
+
+.servises__block-number p {
+    display: inline;
 }
 
 .servises__block-name {

@@ -50,6 +50,9 @@
             font-size: 100px;
             line-height: 122px;
             color: $main-color;
+            p{
+                display: inline;
+            }
         }
         &-name{
             font-weight: 400;

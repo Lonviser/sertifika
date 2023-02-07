@@ -29,11 +29,19 @@
         grid-template-columns: 1fr 1fr;
         &-place{
             display: flex;
-            gap: 25px;
+            gap: 20px;
             align-items: center;
         }
         &-txt{
-            max-width: 315px;
+            max-width: 390px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $black;
+        }
+        &-txt2{
+            max-width: 500px;
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
@@ -42,7 +50,11 @@
         }
         &-sertification{
             display: flex;
-            column-gap:25px;
+            column-gap:20px;
+            align-items: center;
+            img{
+                max-width:147px;
+            }
         }
     }
 }

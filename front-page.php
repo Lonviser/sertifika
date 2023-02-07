@@ -33,7 +33,7 @@ get_header();
                         </div>
                         <div class="about__block-sertification">
                             <img src="<?php the_field('kartinka_2');?>">
-                            <div class="about__block-txt"><?php the_field('test_2');?> </div>
+                            <div class="about__block-txt about__block-txt2"><?php the_field('test_2');?> </div>
                         </div>
                     </div>
                 </div>
