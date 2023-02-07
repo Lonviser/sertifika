@@ -73,7 +73,7 @@
                             </div>
 
                             <div class="header__menu__list">
-                                <div class="menu__link home-link"><a href=""><img class="
+                                <div class="menu__link home-link"><a href="/"><img class="
                                 <?php if(is_front_page()){
                                     echo ("menu__under");
                                 }
@@ -101,24 +101,119 @@
    
 
             <?php
-            if ( is_page_template( ['pages/information.php', 'pages/certificates.php','pages/vacancies.php'] ) ) { ?>
+            if ( is_page_template( ['pages/information.php', 'pages/certificates.php','pages/vacancies.php','pagespolitics.php'] ) ) { ?>
             <style type="text/css">
                 li#menu-item-267 {
                     padding-bottom: 5px;
                     border-bottom: 3px solid #ff0;
             }
             </style>
-            <?php } else { ?>
-                <style type="text/css">
-                li#menu-item-267 {
-                    background:red;
-            }
             <?php } ?>
 
-            <style type="text/css">
 
-            ul.menu__list:first-child(){
-                padding-bottom: 5px;
-                border-bottom: 3px solid #ff0;
+            <?php
+            if ( is_page_template( 'pages/contacts.php' ) ) { ?>
+            <style type="text/css">
+                li#menu-item-273 {
+                    padding-bottom: 5px;
+                    border-bottom: 3px solid #ff0;
             }
             </style>
+            <?php } ?>
+
+            <?php
+            if ( is_page_template( 'pages/news.php' ) ) { ?>
+            <style type="text/css">
+                li#menu-item-274 {
+                    padding-bottom: 5px;
+                    border-bottom: 3px solid #ff0;
+            }
+            </style>
+            <?php } ?>
+
+            <?php
+            if ( is_page_template( ['pages/portfolio.php','pages/сustomers.php'] ) ) { ?>
+            <style type="text/css">
+                li#menu-item-275 {
+                    padding-bottom: 5px;
+                    border-bottom: 3px solid #ff0;
+            }
+            </style>
+            <?php } ?>
+   
+            <?php
+                $result = onwp_is_post_type('servises');
+
+                if($result) {
+                    ?>
+                    <style type="text/css">
+                        li#menu-item-272 {
+                        padding-bottom: 5px;
+                        border-bottom: 3px solid #ff0;
+                     }
+                     </style>
+                    <?php
+                    #Если тип записи соответствует product, то делаем что-то
+                } else {
+                    ?>
+
+                    <?php
+                   #Если тип записи НЕ соответствует product, то делаем что-то другое
+                }
+            ?>
+
+            <?php
+                $result = onwp_is_post_type('under_servises');
+
+                if($result) {
+                    ?>
+                    <style type="text/css">
+                        li#menu-item-272 {
+                        padding-bottom: 5px;
+                        border-bottom: 3px solid #ff0;
+                     }
+                     </style>
+                    <?php
+                    #Если тип записи соответствует product, то делаем что-то
+                } else {
+                    ?>
+
+                    <?php
+                   #Если тип записи НЕ соответствует product, то делаем что-то другое
+                }
+            ?>
+
+            
+<?php
+                $result = onwp_is_post_type('tech_servises');
+
+                if($result) {
+                    ?>
+                    <style type="text/css">
+                        li#menu-item-272 {
+                        padding-bottom: 5px;
+                        border-bottom: 3px solid #ff0;
+                     }
+                     </style>
+                    <?php
+                    #Если тип записи соответствует product, то делаем что-то
+                } else {
+                    ?>
+
+                    <?php
+                   #Если тип записи НЕ соответствует product, то делаем что-то другое
+                }
+            ?>
+            <?php
+                if (get_post_type() === 'post') {
+                    ?>
+                    <style type="text/css">
+                        li#menu-item-274 {
+                            padding-bottom: 5px;
+                            border-bottom: 3px solid #ff0;
+                        }
+                    </style>
+                      <?php
+                }
+            ?>
+            

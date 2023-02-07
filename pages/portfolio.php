@@ -39,7 +39,7 @@ get_header();
                         $args = array(
                             'post_type'      => 'portfolio',
                             'post_status'    => 'publish',
-                            'posts_per_page' => 16,
+                            'posts_per_page' => -1,
                             'orderby'=> 'date', 
                             'order' => 'ASC',
                         );
@@ -83,6 +83,7 @@ get_header();
                         'format'       => '?paged=%#%',
                         'show_all'     => false,
                         'type'         => 'plain',
+                        'post_type' 	 => 'portfolio',
                         'end_size'     => 2,
                         'mid_size'     => 1,
                         'prev_next'    => false,

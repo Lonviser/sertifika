@@ -218,4 +218,20 @@ function filter_nav_menu_link_attributes($atts, $item, $args) {
     return $atts;
 }
 
+
+
+function onwp_is_post_type(string $post_type)
+{
+	global $post;
+	
+	if(!$post) return false;
+
+	$original_post_type = get_post_type( $post->ID );
+
+	if($original_post_type === $post_type) return true;
+
+	return false;
+}
+
 ?>
+

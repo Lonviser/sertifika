@@ -58,6 +58,14 @@ get_header();
                             <img src=" <?php the_field('foto_sertifikata_7');?>" alt="Сертификат">
                             <?php the_field('podpis_sertifikata_7');?>
                         </div>
+                        <?php 
+                        $loop = CFS()-> get('_certificates');
+                        foreach($loop as $row){
+                            ?>
+                            <div class="certificates-page-block"><?= $row['_certificates_img'] ?></div>
+                            <?php
+                        }
+                        ?>
                     </div>
             </div>
         </div>
