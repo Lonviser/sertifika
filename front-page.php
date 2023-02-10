@@ -20,10 +20,10 @@ get_header();
                 <div class="container">
                     <div class="about__price">
                         <div class="about__price-text">
-                            Интересует стоимость? Скачивайте <a href="<?php the_field('price-list');?>">Актуальный</a>  прайс-лист
+                            Интересует стоимость? Скачивайте <a href="<?php the_field('price-list',6);?>">Актуальный</a>  прайс-лист
                         </div>
                         <div class="about__price-button">
-                            <a href="<?php the_field('price-list');?>"><button type="submit" class="button button-green">Cкачать прайс</button></a>
+                            <a href="<?php the_field('price-list',6);?>"><button type="submit" class="button button-green">Cкачать прайс</button></a>
                         </div>
                     </div>
                     <div class="about__block">

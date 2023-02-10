@@ -85,3 +85,113 @@ $(".sub-menu").hover(
 
 );
 
+window.addEventListener('DOMContentLoaded', () => {
+  "use strict";
+
+   /** Меню */
+
+const navbarMenu = document.getElementById('m-menu');
+const burgerMenu = document.getElementById('burger');
+const overlayMenu = document.getElementById('overlay');
+const menuItem = document.querySelectorAll('.menu-item-has-children');
+
+//добавляем стрелочки пунктам меню имеющие подменю
+addExpandElement(menuItem);
+
+function addExpandElement(menuItem) {
+  menuItem.forEach(element => {
+      let newElem = document.createElement("button");
+      newElem.className = "expand";
+      
+      const tagA = element.querySelector('a');
+      tagA.append(newElem); 
+  });
+}
+
+// Toggle Menu Function
+burgerMenu.addEventListener('click', toggleMenu);
+// overlayMenu.addEventListener('click', toggleMenu);
+
+function toggleMenu() {	
+navbarMenu.classList.toggle('active');
+// overlayMenu.classList.toggle('active');
+burgerMenu.classList.toggle('active');
+}
+
+const btn = document.querySelectorAll(".expand");
+
+btn.forEach(b => {
+b.addEventListener('click', (e) =>{
+  e.preventDefault();
+      const menuItemHasChildren = e.target.offsetParent;
+      
+      // console.log('Click Btn', menuItemHasChildren);
+
+  // If menu-item-child is Expanded, then Collapse It
+  if (menuItemHasChildren.classList.contains('active')) {
+    collapseSubMenu(menuItemHasChildren);
+  } else {
+    // Свернуть существующий дочерний элемент menu-item-child
+    // if (navbarMenu.querySelector('.menu-item-has-children.active')) {
+    // 	collapseSubMenu();
+    // }
+    // Расширен новый menu-item-child
+    menuItemHasChildren.classList.add('active');
+    const subMenu = menuItemHasChildren.querySelector('.sub-menu');
+    // subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+  }
+})
+});
+
+// Collapse SubMenu Function
+// navbarMenu.addEventListener('click', (e) => {
+// 	console.log(e);
+// 	if (e.target.hasAttribute('data-toggle') && window.innerWidth <= 1200) {
+// 		e.preventDefault();
+//         const menuItemHasChildren = e.target.parentElement;
+      
+//         //console.log('Click menu');
+
+// 		// If menu-item-child is Expanded, then Collapse It
+// 		if (menuItemHasChildren.classList.contains('active')) {
+// 			collapseSubMenu();
+// 		} else {
+// 			// Свернуть существующий дочерний элемент menu-item-child
+// 			if (navbarMenu.querySelector('.menu-item-has-children.active')) {
+// 				collapseSubMenu();
+// 			}
+// 			// Расширен новый menu-item-child
+// 			menuItemHasChildren.classList.add('active');
+// 			const subMenu = menuItemHasChildren.querySelector('.sub-menu');
+// 			subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+// 		}
+// 	}
+// });
+
+function collapseSubMenu(menuItemHasChildren) {
+//console.log('menuItemHasChildren', menuItemHasChildren);
+// menuItemHasChildren.querySelector('.menu-item-has-children.active .sub-menu').removeAttribute('style');
+// menuItemHasChildren.removeAttribute('style');
+// menuItemHasChildren.querySelector('.menu-item-has-children .active').classList.remove('active');
+menuItemHasChildren.classList.remove('active');
+
+}
+
+// Fixed Resize Screen Function
+window.addEventListener('resize', () => {
+if (this.innerWidth > 1225) {
+  // If navbarMenu is Open, then Close It
+  if (navbarMenu.classList.contains('active')) {
+          toggleMenu();
+          //console.log('toggleMenu');
+  }
+
+  // If menu-item-child is Expanded, then Collapse It
+  if (navbarMenu.querySelector('.menu-item-has-children.active')) {
+          collapseSubMenu();
+          //console.log('collapseSubMenu');
+  }
+}
+});
+
+});

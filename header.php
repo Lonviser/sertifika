@@ -104,7 +104,7 @@
             if ( is_page_template( ['pages/information.php', 'pages/certificates.php','pages/vacancies.php','pagespolitics.php'] ) ) { ?>
             <style type="text/css">
                 li#menu-item-267 {
-                    padding-bottom: 5px;
+                    padding-bottom: 6px;
                     border-bottom: 3px solid #ff0;
             }
             </style>
@@ -115,7 +115,7 @@
             if ( is_page_template( 'pages/contacts.php' ) ) { ?>
             <style type="text/css">
                 li#menu-item-273 {
-                    padding-bottom: 5px;
+                    padding-bottom: 6px;
                     border-bottom: 3px solid #ff0;
             }
             </style>
@@ -125,7 +125,7 @@
             if ( is_page_template( 'pages/news.php' ) ) { ?>
             <style type="text/css">
                 li#menu-item-274 {
-                    padding-bottom: 5px;
+                    padding-bottom: 6px;
                     border-bottom: 3px solid #ff0;
             }
             </style>
@@ -135,7 +135,7 @@
             if ( is_page_template( ['pages/portfolio.php','pages/сustomers.php'] ) ) { ?>
             <style type="text/css">
                 li#menu-item-275 {
-                    padding-bottom: 5px;
+                    padding-bottom: 6px;
                     border-bottom: 3px solid #ff0;
             }
             </style>
@@ -148,7 +148,7 @@
                     ?>
                     <style type="text/css">
                         li#menu-item-272 {
-                        padding-bottom: 5px;
+                        padding-bottom: 6px;
                         border-bottom: 3px solid #ff0;
                      }
                      </style>
@@ -169,7 +169,7 @@
                     ?>
                     <style type="text/css">
                         li#menu-item-272 {
-                        padding-bottom: 5px;
+                        padding-bottom: 6px;
                         border-bottom: 3px solid #ff0;
                      }
                      </style>
@@ -191,7 +191,7 @@
                     ?>
                     <style type="text/css">
                         li#menu-item-272 {
-                        padding-bottom: 5px;
+                        padding-bottom: 6px;
                         border-bottom: 3px solid #ff0;
                      }
                      </style>
@@ -209,7 +209,7 @@
                     ?>
                     <style type="text/css">
                         li#menu-item-274 {
-                            padding-bottom: 5px;
+                            padding-bottom: 6px;
                             border-bottom: 3px solid #ff0;
                         }
                     </style>

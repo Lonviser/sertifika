@@ -16,8 +16,7 @@ get_header();
                             Интересует стоимость? Скачивайте <a href="<?php the_field('price-list',6);?>">Актуальный</a>  прайс-лист
                         </div>
                         <div class="about__price-button">
-                            <a href="<?php the_field('price-list');?>"><button type="submit" class="button button-green">Cкачать прайс</button></a>
-                        </div>
+                            <a href="<?php the_field('price-list',6);?>"><button type="submit" class="button button-green">Cкачать прайс</button></a>                        </div>
                     </div>
 	</div>
 
